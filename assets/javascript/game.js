@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
     // Target values
-    var targetNumberValue = Math.floor(Math.random() * 100) + 19;
+    var targetNumberValue = Math.floor(Math.random() * 120) + 19;
     $("#target-number").text(targetNumberValue);
     var yourNumberValue = 0;
    
@@ -67,7 +67,7 @@ $(document).ready(function () {
         orangeCrystalValue = Math.floor(Math.random() * 12) + 1;
         redCrystalValue = Math.floor(Math.random() * 12) + 1;
         yourNumberValue = 0;
-        targetNumberValue = Math.floor(Math.random() * 100) + 19;
+        targetNumberValue = Math.floor(Math.random() * 120) + 19;
 
         $("#target-number").text(targetNumberValue);
         $("#user-number").text(yourNumberValue);        
