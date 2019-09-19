@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 
     <title>Crystals Game</title>
 </head>
@@ -26,6 +27,8 @@
                 crystals to attain the number!</p>
         </div>
     </div>
+
+    <!-- Target Number and User Guess Number -->
 
     <div class="container">
         <div class="row">
@@ -51,15 +54,15 @@
         </div>
 
 
-
+        <!-- Wins and Losses -->
 
         <div class="row">
             <div class="card col-5">
                 <div class="card-header">
                     Wins
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title" id="target-number"></h5>
+                <div class="card-body" id="winsDisplay">
+                    <h5 class="card-title"></h5>
                 </div>
             </div>
 
@@ -69,37 +72,35 @@
                 <div class="card-header">
                     Losses
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title" id="user-number"></h5>
+                <div class="card-body" id="lossesDisplay">
+                    <h5 class="card-title"></h5>
                 </div>
             </div>
         </div>
 
+        <!-- Crystals -->
 
         <div class="row">
             <div class="col-md-3 col-sm-6 col-6">
-                <div class="media">
+                <div class="media crystal" id="blue-crystal">
                     <img src="./assets/images/Blue Crystal.jpg" class="mr-3" alt="Blue Crystal">
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6 col-6">
-                <div class="media">
+                <div class="media crystal" id="green-crystal">
                     <img src="./assets/images/Green Crystal.jpg" class="mr-3" alt="Green Crystal">
                 </div>
             </div>
 
-
             <div class="col-md-3 col-sm-6 col-6">
-                <div class="media">
+                <div class="media crystal" id="orange-crystal">
                     <img src="./assets/images/Orange Crystal.jpg" class="mr-3" alt="Orange Crystal">
                 </div>
             </div>
 
-
-
             <div class="col-md-3 col-sm-6 col-6">
-                <div class="media">
+                <div class="media crystal" id="red-crystal">
                     <img src="./assets/images/Red Crystal.jpg" class="mr-3" alt="Red Crystal">
                 </div>
             </div>
